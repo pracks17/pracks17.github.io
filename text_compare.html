@@ -1,0 +1,157 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>Code comparision</title>
+<meta http-equiv="content-language" content="en-US">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="description" content="Compares code"/>
+<meta name="author" content="Pratibha"/>
+<link rel="stylesheet" href="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\jquery-ui.css" type="text/css"/>
+<script src="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\jquery.min.js" type="text/javascript"></script>
+<script src="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\jquery-ui.min.js" type="text/javascript"></script>
+<link href="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\formatter.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\ajaxupload.3.5.js"></script>
+<script src="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\common_load.js" type="text/javascript"></script>
+<link rel="stylesheet" href="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\diffview.css" type='text/css'/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="body">
+<script src="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\jquery.zclip.js"></script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+
+<div class="navbar-inner">
+<p align="center"><img src="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\logo.png" width="160" height="50" alt="logo"></p>
+
+<div class='mainheader'>
+
+</div>
+
+</div>
+
+</div>
+<p align="center"><img src="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\logo.png" width="0" height="00" alt="logo"></p>
+</div>
+
+<div class="some_other_box"></div>
+</div>
+<div id="superdiv" class='superDiv'></div>
+<div id="customLogin" class='customLogin'>
+<div class="span7 loginDiv">
+<div class="center span7 logindiv">
+<label class="span6 logFail" id="logFail"></label>
+<table id="signinDiv" class='center'>
+<tr>
+<td>
+
+</td>
+</tr>
+</table>
+</div>
+</div>
+ 
+<input type="hidden" id="viewName" value="file-difference">
+<input type="hidden" id="isLogin" value="">
+</div>
+<script type="text/javascript">
+		 
+$("#savebtn").hide();
+
+</script>
+<script src="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\difflib.js" type="text/javascript"></script>
+<script src="C:\Users\abc\Documents\GitHub\Files\pracks17.github.io\diffview.js" type="text/javascript"></script>
+<div id="innerBody" class="innerBody setBgImage">
+<div class="container-fluid viewerInnerBodyDiv">
+<div class="row-fluid">
+<div class='center'>
+<div class="span12 fileDiffMainContainer">
+<h3 class='fileViewHead'>Text Difference</h3>
+<form name='filediff'>
+<div class="span6 original margin0">
+<label id="F1" class="fileup">Base Text</label>
+<textarea class="span12 allNumberConverter" id="file1"></textarea>
+<input type='button' id='clear1' class='window_label' value='Reset' onclick="clear12('file1')">
+ 
+</div>
+<div class="span6 changed">
+<label id="F2" class="fileup">New Text</label>
+<textarea class="span12 allNumberConverter" id="file2"></textarea>
+<input type='button' id='clear1' class='window_label' value='Reset' onclick="clear12('file2')">
+ 
+</div>
+<div class='custombtn'>
+<input id='diff' type="button" value="Difference" onclick="makeFileDiff()" class="wtd span4"/>
+<div class="option">
+<fieldset>
+<legend>Option</legend>
+<input type="checkbox" name='showonlydiff' id='showonlydiff' onclick='showOnlyDiff()'/><span>Show Only Difference</span>
+</fieldset>
+</div>
+</div>
+</form>
+<div class='diffinfo'>
+<span class='successmessage'></span>
+<ul>
+<li class='replace'>Difference <span id='R'></span> </li>
+<li class='empty'>Empty <span id='E'></span></li>
+<li class='insert'>Insert <span id='I'></span></li>
+<li class='delete'>Delete <span id='D'></span></li>
+</ul>
+</div>
+<div id="showDiff" class="span12 difftable hide"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+
+var fileName1='';
+var fileName2='';
+
+function setFileName(which,name){
+	if(which==1){
+		fileName1=name;
+	}
+	else{
+		fileName2=name;
+	}
+}
+function setToEditor(res){
+	$("#file1").val('');
+	$("#file1").val(res);
+}
+function setToEditor2(res){
+	$("#file2").val('');
+	$("#file2").val(res);
+}
+function clear12(id)
+{
+	$('#'+id).val('');
+}
+</script>
+<div>
+</div>
+<script type="text/javascript">var switchTo5x=true;</script>
+<div class="container-fluid shareLinkConatiner" id="shareLinksOption">
+<div class="row-fluid footerpart shareLinkInnerConatiner">
+</div>
+</div>
+<div class="container-fluid infoSection">
+<div class="row-fluid footerpart">
+<script type="text/javascript">
+			$(".infoSection").hide();
+		</script>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid footerpart">
+<div class='footer_container'>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+</script>
+<div id="openError" class='hide'> </div>
+</body>
+</html>
